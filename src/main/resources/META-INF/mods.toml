@@ -20,3 +20,10 @@ license="MIT"
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.classictinkers]]
+    modId="mantle"
+    mandatory=true
+    versionRange="[1.6.154,)"
+    ordering="NONE"
+    side="BOTH"
+

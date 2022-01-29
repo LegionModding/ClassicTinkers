@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle'
 
-version = 'FORGE-0.0.1'
+version = 'FORGE-0.0.2'
 group = 'com.legionmodding.classictinkers'
 archivesBaseName = 'ClassicTinkers'
 
@@ -62,8 +62,17 @@ minecraft {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+repositories {
+    maven {
+        name 'DVS1 Maven FS'
+        url 'https://dvs1.progwml6.com/files/maven'
+    }
+}
+
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.23'
+
+    implementation fg.deobf("slimeknights.mantle:Mantle:${version_mantle}")
 }
 
 jar {
