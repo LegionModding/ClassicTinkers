@@ -1,4 +1,4 @@
-package slimeknights.tconstruct.smeltery.tileentity;
+package com.legionmodding.classictinkers.tileentity;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -7,6 +7,7 @@ import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.play.server.SPacketParticles;
+import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ITickable;
@@ -24,17 +25,8 @@ import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import slimeknights.tconstruct.common.TinkerNetwork;
-import slimeknights.tconstruct.library.fluid.FluidHandlerCasting;
-import slimeknights.tconstruct.library.fluid.FluidTankAnimated;
-import slimeknights.tconstruct.library.smeltery.ICastingRecipe;
-import slimeknights.tconstruct.library.tileentity.IProgress;
-import slimeknights.tconstruct.shared.tileentity.TileTable;
-import slimeknights.tconstruct.smeltery.events.TinkerCastingEvent;
-import slimeknights.tconstruct.smeltery.network.FluidUpdatePacket;
-import slimeknights.tconstruct.smeltery.network.FluidUpdatePacket.IFluidPacketReceiver;
-
-public abstract class TileCasting extends TileTable implements ITickable, ISidedInventory, IProgress, IFluidPacketReceiver {
+public abstract class TileCasting extends TileTable implements ITickableTileEntity, ISidedInventory, IProgress, FluidUpdatePacket.IFluidPacketReceiver
+{
 
   // the internal fluidtank of the casting block
   public FluidTankAnimated tank;

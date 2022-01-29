@@ -1,11 +1,11 @@
 {
     "textures": {
-        "top": "tconstruct:blocks/smeltery/castingtable_top",
-        "side": "tconstruct:blocks/smeltery/castingtable_side",
-        "leg": "tconstruct:blocks/smeltery/castingtable_side",
-        "legBottom": "tconstruct:blocks/smeltery/castingtable_bottom",
-        "bottom": "tconstruct:blocks/smeltery/castingtable_bottom",
-        "particle": "tconstruct:blocks/smeltery/castingtable_top"
+        "top": "classictinkers:blocks/smeltery/castingtable_top",
+        "side": "classictinkers:blocks/smeltery/castingtable_side",
+        "leg": "classictinkers:blocks/smeltery/castingtable_side",
+        "legBottom": "classictinkers:blocks/smeltery/castingtable_bottom",
+        "bottom": "classictinkers:blocks/smeltery/castingtable_bottom",
+        "particle": "classictinkers:blocks/smeltery/castingtable_top"
     },
 	"elements": [
         {

@@ -42,8 +42,8 @@ options.txt
 /out
 /src_old
 /resources_old
-/resources/assets/tinker
-/resources/assets/unused
+/src/main/resources/assets/tinker
+/src/main/resources/assets/unused
 /design
 /classes/
 #custom

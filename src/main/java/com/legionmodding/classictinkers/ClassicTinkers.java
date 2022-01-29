@@ -1,5 +1,9 @@
 package com.legionmodding.classictinkers;
 
+import com.legionmodding.classictinkers.handler.registry.BlockRegistry;
+import com.legionmodding.classictinkers.handler.registry.ItemRegistry;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -10,8 +14,20 @@ public class ClassicTinkers
 {
     public static final String MOD_ID = "classictinkers";
 
+    public static final ItemGroup CREATIVE_TAB_BLOCKS = new ItemGroup("creativetab")
+    {
+        @Override
+        public ItemStack makeIcon()
+        {
+            return new ItemStack(BlockRegistry.CASTING_BASIN.get());
+        }
+    };
+
     public ClassicTinkers()
     {
+        BlockRegistry.registerBlocks();
+        ItemRegistry.registerItems();
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
 
