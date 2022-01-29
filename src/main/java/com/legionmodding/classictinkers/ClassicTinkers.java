@@ -14,19 +14,19 @@ public class ClassicTinkers
 {
     public static final String MOD_ID = "classictinkers";
 
-    public static final ItemGroup CREATIVE_TAB_BLOCKS = new ItemGroup("creativetab")
+/*    public static final ItemGroup CREATIVE_TAB_BLOCKS = new ItemGroup("creativetab")
     {
         @Override
         public ItemStack makeIcon()
         {
             return new ItemStack(BlockRegistry.CASTING_BASIN.get());
         }
-    };
+    };*/
 
     public ClassicTinkers()
     {
-        BlockRegistry.registerBlocks();
-        ItemRegistry.registerItems();
+        //BlockRegistry.registerBlocks();
+        //ItemRegistry.registerItems();
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
