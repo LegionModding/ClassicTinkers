@@ -1,4 +1,4 @@
-package slimeknights.tconstruct.smeltery.block;
+package com.legionmodding.classictinkers.block;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.block.Block;

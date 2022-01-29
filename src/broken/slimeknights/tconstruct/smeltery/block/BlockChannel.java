@@ -1,4 +1,4 @@
-package slimeknights.tconstruct.smeltery.block;
+package com.legionmodding.classictinkers.block;
 
 import java.util.ArrayList;
 import java.util.List;

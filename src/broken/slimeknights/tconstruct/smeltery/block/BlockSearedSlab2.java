@@ -1,4 +1,4 @@
-package slimeknights.tconstruct.smeltery.block;
+package com.legionmodding.classictinkers.block;
 
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
