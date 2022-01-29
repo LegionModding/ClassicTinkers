@@ -2,6 +2,7 @@ package com.legionmodding.classictinkers;
 
 import com.legionmodding.classictinkers.handler.registry.BlockRegistry;
 import com.legionmodding.classictinkers.handler.registry.ItemRegistry;
+import com.legionmodding.classictinkers.handler.registry.SoundRegistry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -27,6 +28,8 @@ public class ClassicTinkers
 
     public ClassicTinkers()
     {
+        SoundRegistry.registerSounds();
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onClientSetup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
 
