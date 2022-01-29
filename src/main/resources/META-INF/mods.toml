@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+[[mods]] #mandatory
+    modId="classictinkers"
+    version="${file.jarVersion}"
+    displayName="Classic Tinkers"
+    credits="LegionModding"
+    authors="Made with <3 by LegionModding"
+    description='''This is an unofficial port of the 1.12 version of Timkers Construct since I dislike the new version. Also has some addons integrated into the main mod.'''
+[[dependencies.classictinkers]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36.2.23,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.classictinkers]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
