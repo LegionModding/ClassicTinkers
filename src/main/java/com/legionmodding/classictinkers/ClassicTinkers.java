@@ -15,7 +15,7 @@ public class ClassicTinkers
 {
     public static final String MOD_ID = "classictinkers";
 
-/*
+
     public static final ItemGroup CREATIVE_TAB_BLOCKS = new ItemGroup("creativetab")
     {
         @Override
@@ -24,7 +24,6 @@ public class ClassicTinkers
             return new ItemStack(BlockRegistry.CASTING_BASIN.get());
         }
     };
-*/
 
     public ClassicTinkers()
     {
